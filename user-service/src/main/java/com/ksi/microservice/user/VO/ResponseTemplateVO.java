@@ -1,5 +1,7 @@
 package com.ksi.microservice.user.VO;
 
+
+import com.ksi.microservice.user.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,11 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Department {
+public class ResponseTemplateVO  {
 
-    private Long departmentId;
-    private String departmentName;
-    private String departmentAddress;
-    private String departmentCode;
+    private User user;
+    private Department department;
 }
-
